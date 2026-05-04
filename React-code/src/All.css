@@ -89,9 +89,10 @@
 }
 
 .dark {
-  /* --background:oklch(0.2393 0.0129 258.39); */
-  --background:rgb(35 39 47 / 1);
+
+
     --themeIcon:oklch(0.985 0 0);
+    --background:rgb(35 39 47 / 1);
     --foreground:oklch(0.985 0 0);
     --card:oklch(0.205 0 0);
     --card-foreground:oklch(0.985 0 0);
@@ -132,32 +133,32 @@
   body {@apply bg-background text-foreground;}
   html {@apply font-sans;}
 
-.Header{
-  @apply flex items-center justify-evenly h-14 p-[0.1rem_0.29rem] border-b border-[!background]  w-full bg-background
-   md:h-15 md:p-[0.3rem_0.4rem];
-}
-.HeaderLogo{
-  @apply w-auto; 
-}
+  .Header{
+    @apply flex items-center justify-around h-14 p-[0.1rem_0.29rem] border-b border-[!background]  w-full bg-background
+    md:h-15 md:p-[0.3rem_0.4rem];
+  }
+  .HeaderLogo{
+    @apply w-auto; 
+  }
 
 
-.SearchBar{
-  @apply bg-white flex items-center border border-gray-300 rounded-full w-25 w560:w-auto justify-between overflow-hidden
-          focus:outline focus:outline-sky-200;
-}
-.InputField{
-  @apply  outline-none text-xs ml-2.5 text-black placeholder:italic w-full  ;
-}
+  .SearchBar{
+    @apply bg-white flex items-center border border-gray-300 rounded-full w-35 w560:w-auto justify-between overflow-hidden
+            focus:outline focus:outline-sky-200;
+  }
+  .InputField{
+    @apply  outline-none text-xs ml-2.5 text-black placeholder:italic w-full  ;
+  }
 
-.SearchIcons{
-  @apply hover:bg-gray-200 text-black rounded-full size-8 flex items-center cursor-pointer justify-center ml-2;
-}
+  .SearchIcons{
+    @apply hover:bg-gray-200 text-black rounded-full size-8 flex items-center cursor-pointer justify-center ml-2;
+  }
 
-.themeToggle{
-  @apply cursor-pointer bg-sidebar-border   text-themeIcon rounded-full size-8 flex justify-center items-center;
-}
+  .themeToggle{
+    @apply cursor-pointer bg-sidebar-border  text-themeIcon rounded-full size-8 flex justify-center items-center;
+  }
 
-.SearchBarMobile{
-  @apply flex justify-center bg-accent rounded-full size-8 items-center;
-}
+  .SearchBarMobile{
+    @apply flex justify-center bg-accent rounded-full size-8 items-center;
+  }
 }

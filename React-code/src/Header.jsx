@@ -14,7 +14,7 @@ export default function Maincomponent() {
   }, []);
 
   return (
-    <div className="Header">
+    <div className="Header ">
       {hide || <HeadLogo />}
       <SearchBar setHide={setHide} hide={hide} windowWidth={windowWidth} />
       {hide || <ThemeToggle />}
@@ -39,11 +39,11 @@ const SearchBar = (prop) => {
   // FullSearchWidth FUNCTION ----
   function FullSearchWidth() {
     return (
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full mt-2  ">
         <input
           type="text"
           placeholder="Search..."
-          className="InputField border rounded-full p-2 mr-2 bg-white"
+          className="InputField border-2 rounded-full p-2 mr-2 bg-white"
         />
         <div
           className="size-8 flex justify-center items-center text-themeIcon rounded-full"

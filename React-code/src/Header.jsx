@@ -148,8 +148,9 @@ const LoginSignUpICON = (props) => {
          <b>Login</b>
         </button>
       )}
-      <Button variant="outline" size="lg">
-        {props.windowWidth <= 440 ? <User /> : <b>SignUp</b>}
+      <Button variant="outline" size="lg" >
+        {/* {props.windowWidth <= 440 ? <User /> : <b>SignUp</b>} */}
+        <User />SignUp
       </Button>
     </div>
   );

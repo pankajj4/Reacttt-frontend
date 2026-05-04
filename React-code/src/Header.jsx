@@ -144,13 +144,14 @@ const LoginSignUpICON = (props) => {
   return (
     <div className="gap-x-3 flex cursor-pointer">
       {props.windowWidth <= 440 || (
-        <button size="lg" variant="outline" className=" cursor-pointer"  >
-         <b>Login</b>
+        <button size="lg" variant="outline" className=" cursor-pointer">
+          <b>Login</b>
         </button>
       )}
-      <Button variant="outline" size="lg" >
+      <Button variant="outline" size="lg">
         {/* {props.windowWidth <= 440 ? <User /> : <b>SignUp</b>} */}
-        <User />SignUp
+        <User />
+        SignUp
       </Button>
     </div>
   );

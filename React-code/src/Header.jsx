@@ -3,6 +3,7 @@ import { useState, useReducer, useEffect } from "react";
 import { Search, X, Moon, Sun, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 export default function Maincomponent() {
   const [hide, setHide] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -43,7 +44,7 @@ const SearchBar = (prop) => {
         <input
           type="text"
           placeholder="Search..."
-          className="InputField border-2 rounded-full p-2 mr-2 bg-white"
+          className="InputField border-2cc  rounded-full p-2 mr-2 bg-white"
         />
         <div
           className="size-8 flex justify-center items-center text-themeIcon rounded-full"

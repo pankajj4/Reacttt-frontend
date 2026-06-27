@@ -28,7 +28,7 @@ export default function App() {
       ]
     },
     { path: "/signup", element: <SignUp /> },
-    { path: "/login", element: <Login windowWidth={windowWidth} /> },
+    { path: "/login", element: <Login  /> },
     { path: "*", element: <h1>ERROR</h1> }
 
   ]);

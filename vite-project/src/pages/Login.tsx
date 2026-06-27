@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import "@/index.css"
 import { useNavigate } from "react-router";
 
-export const Login = (props: { windowWidth: number }) => {
+export const Login = () => {
    const Navigate = useNavigate();
 
     return (

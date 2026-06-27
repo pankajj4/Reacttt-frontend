@@ -134,7 +134,7 @@
   }
 
   .Header {
-    @apply flex items-center flex-row justify-around h-14 p-[0.1rem_0.29rem] border-b border-[!background]  w-full bg-background
+    @apply flex items-center  justify-around h-14 p-[0.1rem_0.29rem] border-b border-[!background]  w-full bg-background
     md:h-15 md:p-[0.3rem_0.4rem];
   }
   .HeaderLogo {

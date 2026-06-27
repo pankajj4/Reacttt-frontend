@@ -16,8 +16,10 @@ export function Header({ windowWidth }: { windowWidth: number }) {
             <li><NavLink to="/"> <HeadLogo /> </NavLink>  </li>
             <li> <SearchBar setHide={setHide} hide={hide} windowWidth={windowWidth} /> </li>
             <li> <ThemeToggle /> </li>
-            {windowWidth <= 530 ? "" : <li> <NavLink to="/login" ><LoginButton /></NavLink></li>}
-            <li> <NavLink to="/signup" > <SignUpButton />  </NavLink></li>
+            <ul className="flex gap-3">
+                {windowWidth <= 530 ? "" : <li> <NavLink to="/login" ><LoginButton /></NavLink></li>}
+                <li> <NavLink to="/signup" > <SignUpButton />  </NavLink></li>
+            </ul>
         </ul>
         <Outlet />
     </>

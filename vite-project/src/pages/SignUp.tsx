@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import "@/index.css"
+import { useNavigate } from "react-router";
+
 
 
 export function SignUpButton() {
@@ -9,14 +11,15 @@ export function SignUpButton() {
 }
 
 export const SignUp = () => {
-    // const [email, setEmail] = useState<string>("");
-    // const [password, setPassword] = useState<string>("");
-
+const Navigate = useNavigate();
 
     return (
         <div className="FormHtmlBody">
             <div className="MainFormDiv">
-                <h1 className=" text-center text-[1.75rem]  mt-3 mb-8 ">
+                <p className="text-[.7rem] select-none cursor-pointer text-black " onClick={()=>Navigate(-1)}>
+                    {"<-Back"}
+                </p>
+                <h1 className=" text-center select-none text-black text-[1.75rem]  mt-3 mb-8 ">
                     <b>Create Account </b>
                 </h1>
                 <div className="w-full flex flex-col gap-4.5 mb-3 mt-5">
@@ -45,9 +48,9 @@ export const SignUp = () => {
                         Create account
                     </button>
                 </div>
-                <p className="m-0 text-[1rem] text-[#747474]">
+                <p className="m-0 text-[1rem] text-[#747474] select-none">
                     Already have an account? {"   "}
-                    <span className="text-[0.8rem] underline decoration-teal-600 text-teal-600 cursor-pointer font-extrabold">
+                    <span className="text-[0.8rem] underline decoration-teal-600 text-teal-600 cursor-pointer select-none font-extrabold" onClick={()=>Navigate("/login")}>
                         LogIn
                     </span>
                 </p>

@@ -2,8 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "./index.css"
 import { Header } from "./Header";
 import { HomePage } from "./HomePage";
-import { Login } from "./pages/Login";
-import { SignUp } from "./pages/SignUp";
+import { Login, LoginAction } from "./pages/Login";
+import { SignUp, SignUpAction } from "./pages/SignUp";
 import { useEffect, useState } from "react";
 
 
@@ -27,8 +27,16 @@ export default function App() {
         { path: "/", Component: HeadLogo },
       ]
     },
-    { path: "/signup", element: <SignUp /> },
-    { path: "/login", element: <Login  /> },
+    {
+      path: "/signup",
+      element: <SignUp />,
+      action: SignUpAction
+    },
+    {
+      path: "/login",
+      element: <Login />,
+      action: LoginAction
+    },
     { path: "*", element: <h1>ERROR</h1> }
 
   ]);

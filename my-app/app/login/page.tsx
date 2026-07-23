@@ -77,6 +77,6 @@ const submit = (event:React.SubmitEvent<HTMLFormElement>) => {
     const password = formData.get('password');
     const email = formData.get('email');
 
-    alert(`Form Submitted Successfully!\nEmail: ${email}\nUsername: ${password}`);
+    alert(`Form Submitted Successfully!\nEmail: ${email}\nPassword: ${password}`);
 };
 export default Login;

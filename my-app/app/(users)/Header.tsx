@@ -19,8 +19,6 @@ export default function Header() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    console.log(windowWidth)
-
     return (<>
         <header className="Header">
             {hide || <Link href="/"> <HeadLogo /> </Link>}
